@@ -11,7 +11,7 @@ What we should do: <br>
 3. New a 'controller', and then, running the consumers and producers. <br>
 4. Everything is done! <br>
 #####1. one producer and one consumer
-'''
+```
 // 1: main
 // define our ringBuffer
 ringBuffer = [BufferSize]int64{}
@@ -61,7 +61,7 @@ func publish(id int, writer *disruptor.MultiProducer) {
 		writer.PublishBatch(sequence-Reservations+1, sequence)
 	}
 }
-'''
+```
 
 Please find the complete implementation in example folder. <br>
 Also, there are some other examples:  one producer and multi consumers,
